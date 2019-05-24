@@ -56,7 +56,7 @@ void Houghcircles()
 
 int main()
 {
-	img = imread("circle.jpg",0);
+	img = imread("circles.jpg",0);
 	hough = Mat::zeros(img.rows, img.cols, CV_8U);
 
 	GaussianBlur(img, img, Size(3, 3), 1, 1);
